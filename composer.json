@@ -1,0 +1,39 @@
+{
+	"name": "mavsolutions/yaml-linter",
+	"description": "A Symfony cli command utility for checking YAML file syntax",
+	"keywords": [
+		"yaml",
+		"yml",
+		"lint",
+		"syntax",
+		"cli",
+		"utility",
+		"symfony"
+	],
+	"homepage": "https://github.com/mavolkmer/yaml-linter",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Markus Volkmer",
+			"homepage": "https://github.com/mavolkmer"
+		}
+	],
+	"require": {
+		"composer-runtime-api": "^2",
+		"symfony/console": "^5 | ^6",
+		"symfony/finder": "^5 | ^6",
+		"symfony/yaml": "^5 | ^6"
+	}
+	,
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
+	},
+	"autoload": {
+		"psr-4": {
+			"MavSolutions\\YamlLinter\\": "src/"
+		}
+	},
+	"bin": [
+		"bin/yaml-linter"
+	]
+}
