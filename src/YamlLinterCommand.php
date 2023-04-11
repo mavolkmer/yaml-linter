@@ -24,7 +24,7 @@ class YamlLinterCommand extends LintCommand
         );
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $filenames = (array)$input->getArgument('filename');
         $excludePatterns = $input->getOption('excludePattern');
